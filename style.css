@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+:root {
+    --primarycolor: #506EEC;
+    --secondarycolor: #506eec6b;
+  }
+
 html,body{
   width: 100%;
   overflow-x: hidden;
@@ -14,12 +20,25 @@ body {
   height: 105px;
 }
 
+.question{
+    padding: 9px 0px;
+}
+
+.heading{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 40px;
+  color: var(--primarycolor);
+  font-weight: 900;
+  text-align: center;
+
+}
+
 .brandname{
   font-family: 'Exo 2', sans-serif;
   font-size: 28px;
   font-weight: 900;
   line-height: 1.2;
-  color: #506EEC;
+  color: var(--primarycolor);
   padding: 40px 0;
 }
 
@@ -27,12 +46,14 @@ body {
   width: 100%;
   max-width: 999px;
   border-radius: 42px !important;
-  padding: 40px 0px;
+  /* padding: 11px 0px; */
   padding-bottom: 0;
+  padding-top: 13px;
+  /* padding-bottom: 13px; */
 }
 
 .reg-btn {
-  background-color: #506eec !important;
+  background-color: var(--primarycolor) !important;
   color: white !important;
   border-radius: 0 !important;
   border-bottom-right-radius: 42px !important;
@@ -85,7 +106,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
-  background: #506eec;
+  background: var(--primarycolor);
   display: block;
   transform: scale(0);
   opacity: 1;
@@ -95,12 +116,12 @@ body {
   padding-left: 8px;
 }
 .checkbox-wrapper-46 .cbx:hover span:first-child {
-  border-color: #506eec;
+  border-color: var(--primarycolor);
 }
 
 .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
-  background: #506eec;
-  border-color: #506eec;
+  background: var(--primarycolor);
+  border-color: var(--primarycolor);
   animation: wave-46 0.4s ease;
 }
 .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
@@ -142,10 +163,8 @@ body {
   padding-left: 30px;
   margin-bottom: 10px;
   position: relative;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
-  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
@@ -156,12 +175,12 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid #555;
+  border: 2px solid #9098a9;
   transition: all 0.3s ease;
 }
 
 .radio-button__input:checked + .radio-button__label .radio-button__custom {
-  background-color: #506eec;
+  background-color: var(--primarycolor);
   border-color: transparent;
   transform: scale(0.8);
   box-shadow: 0 0 20px #4c8bf580;
@@ -195,7 +214,7 @@ input.input{
 
 .input:hover,
 .input:focus {
-  border: 2px solid #506eec;
+  border: 2px solid var(--primarycolor);
   box-shadow: 0px 0px 0px 7px rgba(74, 157, 236, 0.2);
   background-color: white;
 }
@@ -226,57 +245,57 @@ input.input{
 }
 
 .rating > input:checked ~ label > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 .rating:not(:checked) > label:hover ~ label > svg,
 .rating:not(:checked) > label:hover > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 #star1:hover ~ label > svg,
 #star1:hover > svg {
-  fill: #506eec !important;
+  fill: var(--primarycolor) !important;
 }
 
 #star2:hover ~ label > svg,
 #star2:hover > svg {
-  fill: #506eec !important;
+  fill: var(--primarycolor) !important;
 }
 
 #star3:hover ~ label > svg,
 #star3:hover > svg {
-  fill: #506eec !important;
+  fill: var(--primarycolor) !important;
 }
 
 #star4:hover ~ label > svg,
 #star4:hover > svg {
-  fill: #506eec !important;
+  fill: var(--primarycolor) !important;
 }
 
 #star5:hover ~ label > svg,
 #star5:hover > svg {
-  fill: #506eec !important;
+  fill: var(--primarycolor) !important;
 }
 
 #star1:checked ~ label > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 #star2:checked ~ label > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 #star3:checked ~ label > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 #star4:checked ~ label > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 #star5:checked ~ label > svg {
-  fill: #506eec;
+  fill: var(--primarycolor);
 }
 
 
@@ -296,7 +315,7 @@ input.input{
   height: 150px;
   top: 290px;
   right: 75px;
-  background:#506EEC;
+  background: var(--primarycolor);
   z-index: -1;
  
 }
@@ -306,7 +325,7 @@ input.input{
   height: 60px;
   bottom: 173px;
   right: 71px;
-  background: #506eec6b;
+  background: var(--secondarycolor);
 }
 
 .bubble-3 {
@@ -315,7 +334,7 @@ input.input{
   position: absolute;
   top: -244px;
   right: -148px;
-background: #506eecc7;
+background: var(--primarycolor);
  
   border-radius: 100%;
 }
@@ -339,7 +358,7 @@ background: #506eecc7;
 }
 
 .form-scrollable::-webkit-scrollbar-thumb {
-  background: #506eec;
+  background: var(--primarycolor);
   border-radius: 4px;
 }
 

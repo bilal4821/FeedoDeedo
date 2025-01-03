@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    /> -->
-    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
   </head>
   <body>
     <div class="bubble-3"></div>
@@ -17,7 +14,6 @@
     <div class="bubble bubble-2"></div>
 
     <div class="container">
-   
       <h4 class="brandname">FeedoDeedo.</h4>
     </div>
 
@@ -25,7 +21,6 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="p-3">
-          
             <img class="img-fluid" src="./survey.svg" alt="" />
           </div>
         </div>
@@ -33,11 +28,12 @@
           <div>
             <div class="card shadow mb-5 bg-white form-div">
               <form>
+                <h1 class="heading">Customer Survey </h1>
                 <div class="form-scrollable">
-                  <div class="">
-                    <label for="email" class="mb-3">
-                      <span><b>Question 1</b></span> Lorem ipsum dolor sit amet
-                      consectetur.
+                  <div class="question">
+                    <label for="email" class="mb-4">
+                      <span><b>Question 1</b></span> If your favorite sports
+                      brand was a person, how would you describe it?
                     </label>
                     <div class="container">
                       <div class="d-flex gap-3 flex-wrap mb-3">
@@ -59,7 +55,7 @@
                                 ></polyline>
                               </svg>
                             </span>
-                            <span>Checkbox 1</span>
+                            <span>Successful</span>
                           </label>
                         </div>
 
@@ -81,7 +77,7 @@
                                 ></polyline>
                               </svg>
                             </span>
-                            <span>Checkbox 2</span>
+                            <span>Sophisticated</span>
                           </label>
                         </div>
 
@@ -103,7 +99,7 @@
                                 ></polyline>
                               </svg>
                             </span>
-                            <span>Checkbox 3</span>
+                            <span>Cheerful</span>
                           </label>
                         </div>
 
@@ -125,17 +121,17 @@
                                 ></polyline>
                               </svg>
                             </span>
-                            <span>Checkbox 4</span>
+                            <span>Intelligent</span>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="">
+                  <div class="question">
                     <label for="email" class="form-label mb-3">
-                      <span><b>Question 2</b></span> Lorem ipsum dolor sit amet
-                      consectetur.
+                      <span><b>Question 2</b></span> What is your employment
+                      status?
                     </label>
                   </div>
                   <div class="container">
@@ -149,7 +145,7 @@
                         />
                         <label class="radio-button__label" for="radio1">
                           <span class="radio-button__custom"></span>
-                          React
+                          Homemaker
                         </label>
                       </div>
                       <div class="radio-button">
@@ -161,7 +157,7 @@
                         />
                         <label class="radio-button__label" for="radio2">
                           <span class="radio-button__custom"></span>
-                          Angular
+                          Unemployed
                         </label>
                       </div>
                       <div class="radio-button">
@@ -173,24 +169,24 @@
                         />
                         <label class="radio-button__label" for="radio3">
                           <span class="radio-button__custom"></span>
-                          Vue
+                          Employed full time
                         </label>
                       </div>
                     </div>
                   </div>
-                  <div class=" ">
-                    <label for="email" class="form-label mb-3">
-                      <span><b>Question 3</b></span> Lorem ipsum dolor sit amet
-                      consectetur.
+                  <div class="question">
+                    <label for="email" class="form-label mb-4">
+                      <span><b>Question 3</b></span> Please share your email
+                      address
                     </label>
                     <div class="container">
-                      <input class="input mb-3" placeholder="text" />
+                      <input class="input mb-3" placeholder="Enter Email" />
                     </div>
                   </div>
-                  <div class="">
-                    <label for="email" class="form-label mb-3">
-                      <span><b>Question 4</b></span> Lorem ipsum dolor sit amet
-                      consectetur.
+                  <div class="question">
+                    <label for="email" class="form-label mb-4">
+                      <span><b>Question 4</b></span> Describe yourself in few
+                      words
                     </label>
                     <div class="container">
                       <textarea
@@ -200,10 +196,10 @@
                       ></textarea>
                     </div>
                   </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">
-                      <span><b>Question 5</b></span> Lorem ipsum dolor sit amet
-                      consectetur.
+                  <div class="mb-3 question">
+                    <label for="email" class="form-label mb-2">
+                      <span><b>Question 5</b></span> How likely are you to
+                      recommend this product to others?
                     </label>
                     <div>
                       <div class="rating">
