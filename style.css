@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+.logo {
+  width: 299px;
+  height: 105px;
+}
+
+.brandname{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #506EEC;
+  padding: 40px 0;
+}
+
+.form-div {
+  width: 100%;
+  max-width: 999px;
+  border-radius: 42px !important;
+  padding: 40px 0px;
+  padding-bottom: 0;
+}
+
+.reg-btn {
+  background-color: #506eec !important;
+  color: white !important;
+  border-radius: 0 !important;
+  border-bottom-right-radius: 42px !important;
+  border-bottom-left-radius: 42px !important;
+  padding: 15px 0 !important;
+}
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 8px;
+}
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+  border-color: #506eec;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: #506eec;
+  border-color: #506eec;
+  animation: wave-46 0.4s ease;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #506eec;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: #4c8bf5;
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+input.input{
+  height: 2.5rem;
+}
+
+.input {
+  border: 2px solid transparent;
+  width: 96%;
+  /* height: 2.5em; */
+  padding-left: 0.8em;
+  outline: none;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #506eec;
+  box-shadow: 0px 0px 0px 7px rgba(74, 157, 236, 0.2);
+  background-color: white;
+}
+
+.rating{
+  margin-left: 12px;
+  display: inline-block;
+}
+
+/* From Uiverse.io by aguerquin */ 
+.rating > label {
+  margin-right: 4px;
+}
+
+.rating:not(:checked) > input {
+  display: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.rating:not(:checked) > label > svg {
+  fill: rgb(216, 216, 216);
+  transition: fill 0.3s ease;
+}
+
+.rating > input:checked ~ label > svg {
+  fill: #506eec;
+}
+
+.rating:not(:checked) > label:hover ~ label > svg,
+.rating:not(:checked) > label:hover > svg {
+  fill: #506eec;
+}
+
+#star1:hover ~ label > svg,
+#star1:hover > svg {
+  fill: #506eec !important;
+}
+
+#star2:hover ~ label > svg,
+#star2:hover > svg {
+  fill: #506eec !important;
+}
+
+#star3:hover ~ label > svg,
+#star3:hover > svg {
+  fill: #506eec !important;
+}
+
+#star4:hover ~ label > svg,
+#star4:hover > svg {
+  fill: #506eec !important;
+}
+
+#star5:hover ~ label > svg,
+#star5:hover > svg {
+  fill: #506eec !important;
+}
+
+#star1:checked ~ label > svg {
+  fill: #506eec;
+}
+
+#star2:checked ~ label > svg {
+  fill: #506eec;
+}
+
+#star3:checked ~ label > svg {
+  fill: #506eec;
+}
+
+#star4:checked ~ label > svg {
+  fill: #506eec;
+}
+
+#star5:checked ~ label > svg {
+  fill: #506eec;
+}
+
+
+.bubble-container {
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(98, 111, 163, 0.3);
+  box-shadow: 0px 0px 15px rgba(80, 110, 236, 0.4);
+}
+
+.bubble-1 {
+  width: 150px;
+  height: 150px;
+  top: 290px;
+  right: 75px;
+  background:#506EEC;
+  z-index: -1;
+ 
+}
+
+.bubble-2 {
+  width: 60px;
+  height: 60px;
+  bottom: 173px;
+  right: 71px;
+  background: #506eec6b;
+}
+
+.bubble-3 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -244px;
+  right: -148px;
+background: #506eecc7;
+ 
+  border-radius: 100%;
+}
+
+.form-scrollable {
+  /* max-height: 400px; */
+  overflow-y: auto;
+  /* padding-right: 10px; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px){
+  .form-scrollable{
+    max-height: 400px;
+  }
+}
+
+.form-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-scrollable::-webkit-scrollbar-thumb {
+  background: #506eec;
+  border-radius: 4px;
+}
+
+.form-scrollable::-webkit-scrollbar-thumb:hover {
+  background: #3a54c9;
+}
+
+.form-scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
